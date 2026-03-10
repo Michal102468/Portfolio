@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em;
+    background-color: rgb(166, 166, 166);
+    width: 100vw;
+    height: 100vh;
+    padding: 2em;
+}
+nav{
+    background-color: rgb(96, 96, 96);
+    border-radius: 50px;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    min-height: 300px;
+}
+#AboutMe{
+    grid-column: 1/1;
+    grid-row: 2/4;
+}
+#Projects{
+    grid-column: 2/2;
+    grid-row: 2/4;
+}
+#Profiel{
+    grid-column: 3/3;
+    grid-row: 2/4;
+}
+.hoverdivs{
+    background-color: rgb(96, 96, 96);
+    border-radius: 25px;
+    transition: ease-in-out 0.3s;
+    min-width: 250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 4fr 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+.hoverdivs:hover{
+    scale: 105%;
+    box-shadow: 0px 0px 50px 1px inset black;
+    transition: ease-in-out 0.3s;
+}
+.divIndiv{
+    border-radius: 25px;
+    background-color: rgb(166, 166, 166);
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    grid-row: 3/3;
+}
+.divtext{
+    color: white;
+    font-size: 28px;
+}
+@media only screen and (max-width: 850px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    nav{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        min-height: 300px;
+    }
+    .hoverdivs{
+        max-height: 250px;
+    }
+    #AboutMe{ 
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    #Projects{
+        grid-column: 1/1;
+        grid-row: 3/3;
+    }
+    #Profiel{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+}
