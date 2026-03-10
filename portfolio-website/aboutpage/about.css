@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -10,7 +11,9 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+
 /*nav*/
+
 #nav{
     background-color: gray;
     grid-row: 1/2;
@@ -21,13 +24,15 @@ body{
     transition: ease-in-out 0.5s;
 
     display: grid;
-    grid-template-rows: auto auto auto auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
     grid-template-columns: 1fr;
 }
+
 #nav:hover{
     width: 100px;
     transition: ease-in-out 0.5s;
 }
+
 .buttons{
     height: 50px;
     min-width: 50px;
@@ -39,17 +44,22 @@ body{
     display: none;
     text-decoration: none;
 }
+
 #nav:hover .buttons{
     display: flex;
     transition: ease-in-out 0.25s;
 }
+
 .buttons:hover{
     background-color: lightgray;
     transition: ease-in-out 0.25s;
     color: black;
 }
+
 /*nav end*/
+
 /*maincontent box*/
+
 #maincontent{
     background-color: lightgray;
 
@@ -63,8 +73,11 @@ body{
     scrollbar-width: none;
     overflow: auto;
 }
+
 /*maincontent box end*/
+
 /*intro*/
+
 #intro{
     height: 400px;
     width: 100%;
@@ -79,12 +92,15 @@ body{
     gap: 1em;
     padding: 1em;
 }
+
 #portret{
     height: 200px;
     width: 200px;
     border-radius: 15px;
 }
+
 /*intro end*/
+
 #something{
     height: 800px;
     width: 300px;
